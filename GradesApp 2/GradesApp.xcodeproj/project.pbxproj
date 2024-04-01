@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6024450F2BB238B8005E165F /* Semester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6024450E2BB238B8005E165F /* Semester.swift */; };
+		602445112BB23FA1005E165F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 602445102BB23FA1005E165F /* GoogleService-Info.plist */; };
+		602445142BB23FD8005E165F /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 602445132BB23FD8005E165F /* SwiftyJSON */; };
+		602445172BB23FE8005E165F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 602445162BB23FE8005E165F /* Alamofire */; };
+		602445192BB23FE8005E165F /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 602445182BB23FE8005E165F /* AlamofireDynamic */; };
+		6024451C2BB24062005E165F /* SelectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6024451A2BB24062005E165F /* SelectTableViewCell.swift */; };
+		6024451D2BB24062005E165F /* SelectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6024451B2BB24062005E165F /* SelectTableViewCell.xib */; };
+		6024451F2BB241D0005E165F /* LetterGrade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6024451E2BB241D0005E165F /* LetterGrade.swift */; };
+		602445212BB24894005E165F /* AddCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602445202BB24894005E165F /* AddCourseViewController.swift */; };
+		602445232BB25B34005E165F /* CourseReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602445222BB25B34005E165F /* CourseReview.swift */; };
+		602445252BB25DDF005E165F /* CourseReviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602445242BB25DDF005E165F /* CourseReviewsViewController.swift */; };
+		602445272BB25FBA005E165F /* ReviewCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602445262BB25FBA005E165F /* ReviewCourseViewController.swift */; };
+		602445292BB2620E005E165F /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602445282BB2620E005E165F /* Review.swift */; };
+		6040AAEE2BB227ED00BE8CF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6040AAED2BB227ED00BE8CF9 /* AppDelegate.swift */; };
+		6040AAF02BB227ED00BE8CF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6040AAEF2BB227ED00BE8CF9 /* SceneDelegate.swift */; };
+		6040AAF52BB227EE00BE8CF9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6040AAF42BB227EE00BE8CF9 /* Base */; };
+		6040AAF72BB227EF00BE8CF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6040AAF62BB227EF00BE8CF9 /* Assets.xcassets */; };
+		6040AAFA2BB227EF00BE8CF9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6040AAF92BB227EF00BE8CF9 /* Base */; };
+		60A11B832BB2374100D5C5E5 /* Grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A11B822BB2374100D5C5E5 /* Grade.swift */; };
+		60A11B852BB2374D00D5C5E5 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A11B842BB2374D00D5C5E5 /* Course.swift */; };
+		60B925122BB228A900A0EAC0 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B9250F2BB228A900A0EAC0 /* RegisterViewController.swift */; };
+		60B925142BB228A900A0EAC0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B925112BB228A900A0EAC0 /* LoginViewController.swift */; };
+		60B925162BB228E100A0EAC0 /* MyGradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B925152BB228E100A0EAC0 /* MyGradesViewController.swift */; };
+		60B925192BB229E400A0EAC0 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 60B925182BB229E400A0EAC0 /* FirebaseAuth */; };
+		60B9251B2BB229E400A0EAC0 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 60B9251A2BB229E400A0EAC0 /* FirebaseFirestore */; };
+		60B9251E2BB22ADF00A0EAC0 /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 60B9251D2BB22ADF00A0EAC0 /* PKHUD */; };
+		60B925232BB22D1E00A0EAC0 /* GradesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B925212BB22D1E00A0EAC0 /* GradesTableViewCell.swift */; };
+		60B925242BB22D1E00A0EAC0 /* GradesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60B925222BB22D1E00A0EAC0 /* GradesTableViewCell.xib */; };
+		60B925282BB22D3900A0EAC0 /* CoursesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B925262BB22D3900A0EAC0 /* CoursesTableViewCell.swift */; };
+		60B925292BB22D3900A0EAC0 /* CoursesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60B925272BB22D3900A0EAC0 /* CoursesTableViewCell.xib */; };
+		60B9252C2BB22D5A00A0EAC0 /* CourseReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B9252A2BB22D5A00A0EAC0 /* CourseReviewTableViewCell.swift */; };
+		60B9252D2BB22D5A00A0EAC0 /* CourseReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60B9252B2BB22D5A00A0EAC0 /* CourseReviewTableViewCell.xib */; };
+		60B925302BB22D6700A0EAC0 /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B9252E2BB22D6700A0EAC0 /* ReviewTableViewCell.swift */; };
+		60B925312BB22D6700A0EAC0 /* ReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60B9252F2BB22D6700A0EAC0 /* ReviewTableViewCell.xib */; };
+		60B925332BB232FA00A0EAC0 /* SelectCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B925322BB232FA00A0EAC0 /* SelectCourseViewController.swift */; };
+		60B925352BB2330700A0EAC0 /* SelectSemesterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B925342BB2330700A0EAC0 /* SelectSemesterViewController.swift */; };
+		60B925372BB2331200A0EAC0 /* SelectGradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B925362BB2331200A0EAC0 /* SelectGradeViewController.swift */; };
+		AC04473A2BB9D78500029EB3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC0447392BB9D78500029EB3 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6024450E2BB238B8005E165F /* Semester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Semester.swift; sourceTree = "<group>"; };
+		602445102BB23FA1005E165F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "GradesApp/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6024451A2BB24062005E165F /* SelectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTableViewCell.swift; sourceTree = "<group>"; };
+		6024451B2BB24062005E165F /* SelectTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectTableViewCell.xib; sourceTree = "<group>"; };
+		6024451E2BB241D0005E165F /* LetterGrade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterGrade.swift; sourceTree = "<group>"; };
+		602445202BB24894005E165F /* AddCourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCourseViewController.swift; sourceTree = "<group>"; };
+		602445222BB25B34005E165F /* CourseReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseReview.swift; sourceTree = "<group>"; };
+		602445242BB25DDF005E165F /* CourseReviewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseReviewsViewController.swift; sourceTree = "<group>"; };
+		602445262BB25FBA005E165F /* ReviewCourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCourseViewController.swift; sourceTree = "<group>"; };
+		602445282BB2620E005E165F /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		6040AAEA2BB227ED00BE8CF9 /* GradesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GradesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6040AAED2BB227ED00BE8CF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6040AAEF2BB227ED00BE8CF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6040AAF42BB227EE00BE8CF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6040AAF62BB227EF00BE8CF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6040AAF92BB227EF00BE8CF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6040AAFB2BB227EF00BE8CF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60A11B822BB2374100D5C5E5 /* Grade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grade.swift; sourceTree = "<group>"; };
+		60A11B842BB2374D00D5C5E5 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		60B9250F2BB228A900A0EAC0 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		60B925112BB228A900A0EAC0 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		60B925152BB228E100A0EAC0 /* MyGradesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGradesViewController.swift; sourceTree = "<group>"; };
+		60B925212BB22D1E00A0EAC0 /* GradesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesTableViewCell.swift; sourceTree = "<group>"; };
+		60B925222BB22D1E00A0EAC0 /* GradesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GradesTableViewCell.xib; sourceTree = "<group>"; };
+		60B925262BB22D3900A0EAC0 /* CoursesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesTableViewCell.swift; sourceTree = "<group>"; };
+		60B925272BB22D3900A0EAC0 /* CoursesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoursesTableViewCell.xib; sourceTree = "<group>"; };
+		60B9252A2BB22D5A00A0EAC0 /* CourseReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseReviewTableViewCell.swift; sourceTree = "<group>"; };
+		60B9252B2BB22D5A00A0EAC0 /* CourseReviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CourseReviewTableViewCell.xib; sourceTree = "<group>"; };
+		60B9252E2BB22D6700A0EAC0 /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
+		60B9252F2BB22D6700A0EAC0 /* ReviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewTableViewCell.xib; sourceTree = "<group>"; };
+		60B925322BB232FA00A0EAC0 /* SelectCourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCourseViewController.swift; sourceTree = "<group>"; };
+		60B925342BB2330700A0EAC0 /* SelectSemesterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSemesterViewController.swift; sourceTree = "<group>"; };
+		60B925362BB2331200A0EAC0 /* SelectGradeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGradeViewController.swift; sourceTree = "<group>"; };
+		AC0447392BB9D78500029EB3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "GradesApp/GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6040AAE72BB227ED00BE8CF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				602445172BB23FE8005E165F /* Alamofire in Frameworks */,
+				602445192BB23FE8005E165F /* AlamofireDynamic in Frameworks */,
+				60B9251E2BB22ADF00A0EAC0 /* PKHUD in Frameworks */,
+				60B925192BB229E400A0EAC0 /* FirebaseAuth in Frameworks */,
+				602445142BB23FD8005E165F /* SwiftyJSON in Frameworks */,
+				60B9251B2BB229E400A0EAC0 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6040AAE12BB227ED00BE8CF9 = {
+			isa = PBXGroup;
+			children = (
+				602445102BB23FA1005E165F /* GoogleService-Info.plist */,
+				AC0447392BB9D78500029EB3 /* GoogleService-Info.plist */,
+				6040AAEC2BB227ED00BE8CF9 /* GradesApp */,
+				6040AAEB2BB227ED00BE8CF9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6040AAEB2BB227ED00BE8CF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6040AAEA2BB227ED00BE8CF9 /* GradesApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6040AAEC2BB227ED00BE8CF9 /* GradesApp */ = {
+			isa = PBXGroup;
+			children = (
+				60A11B812BB2373200D5C5E5 /* Models */,
+				60B925252BB22D2400A0EAC0 /* Views */,
+				60B925202BB22CFD00A0EAC0 /* Authentication */,
+				60B9251F2BB22CD100A0EAC0 /* ViewControllers */,
+				6040AAED2BB227ED00BE8CF9 /* AppDelegate.swift */,
+				6040AAEF2BB227ED00BE8CF9 /* SceneDelegate.swift */,
+				6040AAF32BB227EE00BE8CF9 /* Main.storyboard */,
+				6040AAF62BB227EF00BE8CF9 /* Assets.xcassets */,
+				6040AAF82BB227EF00BE8CF9 /* LaunchScreen.storyboard */,
+				6040AAFB2BB227EF00BE8CF9 /* Info.plist */,
+			);
+			path = GradesApp;
+			sourceTree = "<group>";
+		};
+		60A11B812BB2373200D5C5E5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				60A11B822BB2374100D5C5E5 /* Grade.swift */,
+				60A11B842BB2374D00D5C5E5 /* Course.swift */,
+				6024450E2BB238B8005E165F /* Semester.swift */,
+				6024451E2BB241D0005E165F /* LetterGrade.swift */,
+				602445222BB25B34005E165F /* CourseReview.swift */,
+				602445282BB2620E005E165F /* Review.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		60B9251F2BB22CD100A0EAC0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				60B925152BB228E100A0EAC0 /* MyGradesViewController.swift */,
+				60B925322BB232FA00A0EAC0 /* SelectCourseViewController.swift */,
+				60B925342BB2330700A0EAC0 /* SelectSemesterViewController.swift */,
+				60B925362BB2331200A0EAC0 /* SelectGradeViewController.swift */,
+				602445202BB24894005E165F /* AddCourseViewController.swift */,
+				602445242BB25DDF005E165F /* CourseReviewsViewController.swift */,
+				602445262BB25FBA005E165F /* ReviewCourseViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		60B925202BB22CFD00A0EAC0 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				60B925112BB228A900A0EAC0 /* LoginViewController.swift */,
+				60B9250F2BB228A900A0EAC0 /* RegisterViewController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		60B925252BB22D2400A0EAC0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				60B925212BB22D1E00A0EAC0 /* GradesTableViewCell.swift */,
+				60B925222BB22D1E00A0EAC0 /* GradesTableViewCell.xib */,
+				60B925262BB22D3900A0EAC0 /* CoursesTableViewCell.swift */,
+				60B925272BB22D3900A0EAC0 /* CoursesTableViewCell.xib */,
+				60B9252A2BB22D5A00A0EAC0 /* CourseReviewTableViewCell.swift */,
+				60B9252B2BB22D5A00A0EAC0 /* CourseReviewTableViewCell.xib */,
+				60B9252E2BB22D6700A0EAC0 /* ReviewTableViewCell.swift */,
+				60B9252F2BB22D6700A0EAC0 /* ReviewTableViewCell.xib */,
+				6024451A2BB24062005E165F /* SelectTableViewCell.swift */,
+				6024451B2BB24062005E165F /* SelectTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6040AAE92BB227ED00BE8CF9 /* GradesApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6040AAFE2BB227EF00BE8CF9 /* Build configuration list for PBXNativeTarget "GradesApp" */;
+			buildPhases = (
+				6040AAE62BB227ED00BE8CF9 /* Sources */,
+				6040AAE72BB227ED00BE8CF9 /* Frameworks */,
+				6040AAE82BB227ED00BE8CF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GradesApp;
+			packageProductDependencies = (
+				60B925182BB229E400A0EAC0 /* FirebaseAuth */,
+				60B9251A2BB229E400A0EAC0 /* FirebaseFirestore */,
+				60B9251D2BB22ADF00A0EAC0 /* PKHUD */,
+				602445132BB23FD8005E165F /* SwiftyJSON */,
+				602445162BB23FE8005E165F /* Alamofire */,
+				602445182BB23FE8005E165F /* AlamofireDynamic */,
+			);
+			productName = GradesApp;
+			productReference = 6040AAEA2BB227ED00BE8CF9 /* GradesApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6040AAE22BB227ED00BE8CF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					6040AAE92BB227ED00BE8CF9 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 6040AAE52BB227ED00BE8CF9 /* Build configuration list for PBXProject "GradesApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6040AAE12BB227ED00BE8CF9;
+			packageReferences = (
+				60B925172BB229E400A0EAC0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				60B9251C2BB22ADF00A0EAC0 /* XCRemoteSwiftPackageReference "PKHUD" */,
+				602445122BB23FD8005E165F /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				602445152BB23FE8005E165F /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 6040AAEB2BB227ED00BE8CF9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6040AAE92BB227ED00BE8CF9 /* GradesApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6040AAE82BB227ED00BE8CF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6040AAF72BB227EF00BE8CF9 /* Assets.xcassets in Resources */,
+				602445112BB23FA1005E165F /* GoogleService-Info.plist in Resources */,
+				60B925242BB22D1E00A0EAC0 /* GradesTableViewCell.xib in Resources */,
+				60B925292BB22D3900A0EAC0 /* CoursesTableViewCell.xib in Resources */,
+				6024451D2BB24062005E165F /* SelectTableViewCell.xib in Resources */,
+				60B9252D2BB22D5A00A0EAC0 /* CourseReviewTableViewCell.xib in Resources */,
+				60B925312BB22D6700A0EAC0 /* ReviewTableViewCell.xib in Resources */,
+				AC04473A2BB9D78500029EB3 /* GoogleService-Info.plist in Resources */,
+				6040AAFA2BB227EF00BE8CF9 /* Base in Resources */,
+				6040AAF52BB227EE00BE8CF9 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6040AAE62BB227ED00BE8CF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60B925372BB2331200A0EAC0 /* SelectGradeViewController.swift in Sources */,
+				602445212BB24894005E165F /* AddCourseViewController.swift in Sources */,
+				60B925352BB2330700A0EAC0 /* SelectSemesterViewController.swift in Sources */,
+				602445252BB25DDF005E165F /* CourseReviewsViewController.swift in Sources */,
+				60B9252C2BB22D5A00A0EAC0 /* CourseReviewTableViewCell.swift in Sources */,
+				6040AAEE2BB227ED00BE8CF9 /* AppDelegate.swift in Sources */,
+				60B925282BB22D3900A0EAC0 /* CoursesTableViewCell.swift in Sources */,
+				60A11B832BB2374100D5C5E5 /* Grade.swift in Sources */,
+				6040AAF02BB227ED00BE8CF9 /* SceneDelegate.swift in Sources */,
+				6024451C2BB24062005E165F /* SelectTableViewCell.swift in Sources */,
+				60B925332BB232FA00A0EAC0 /* SelectCourseViewController.swift in Sources */,
+				60A11B852BB2374D00D5C5E5 /* Course.swift in Sources */,
+				60B925162BB228E100A0EAC0 /* MyGradesViewController.swift in Sources */,
+				602445232BB25B34005E165F /* CourseReview.swift in Sources */,
+				60B925232BB22D1E00A0EAC0 /* GradesTableViewCell.swift in Sources */,
+				60B925142BB228A900A0EAC0 /* LoginViewController.swift in Sources */,
+				6024451F2BB241D0005E165F /* LetterGrade.swift in Sources */,
+				602445292BB2620E005E165F /* Review.swift in Sources */,
+				60B925302BB22D6700A0EAC0 /* ReviewTableViewCell.swift in Sources */,
+				6024450F2BB238B8005E165F /* Semester.swift in Sources */,
+				602445272BB25FBA005E165F /* ReviewCourseViewController.swift in Sources */,
+				60B925122BB228A900A0EAC0 /* RegisterViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6040AAF32BB227EE00BE8CF9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6040AAF42BB227EE00BE8CF9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6040AAF82BB227EF00BE8CF9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6040AAF92BB227EF00BE8CF9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6040AAFC2BB227EF00BE8CF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6040AAFD2BB227EF00BE8CF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6040AAFF2BB227EF00BE8CF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GradesApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.uncc.GradesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6040AB002BB227EF00BE8CF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GradesApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.uncc.GradesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6040AAE52BB227ED00BE8CF9 /* Build configuration list for PBXProject "GradesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6040AAFC2BB227EF00BE8CF9 /* Debug */,
+				6040AAFD2BB227EF00BE8CF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6040AAFE2BB227EF00BE8CF9 /* Build configuration list for PBXNativeTarget "GradesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6040AAFF2BB227EF00BE8CF9 /* Debug */,
+				6040AB002BB227EF00BE8CF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		602445122BB23FD8005E165F /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		602445152BB23FE8005E165F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.0;
+			};
+		};
+		60B925172BB229E400A0EAC0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.23.0;
+			};
+		};
+		60B9251C2BB22ADF00A0EAC0 /* XCRemoteSwiftPackageReference "PKHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pkluz/PKHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		602445132BB23FD8005E165F /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 602445122BB23FD8005E165F /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		602445162BB23FE8005E165F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 602445152BB23FE8005E165F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		602445182BB23FE8005E165F /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 602445152BB23FE8005E165F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+		60B925182BB229E400A0EAC0 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 60B925172BB229E400A0EAC0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		60B9251A2BB229E400A0EAC0 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 60B925172BB229E400A0EAC0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		60B9251D2BB22ADF00A0EAC0 /* PKHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 60B9251C2BB22ADF00A0EAC0 /* XCRemoteSwiftPackageReference "PKHUD" */;
+			productName = PKHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6040AAE22BB227ED00BE8CF9 /* Project object */;
+}

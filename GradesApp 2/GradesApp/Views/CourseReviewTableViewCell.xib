@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CourseReviewTableViewCell" rowHeight="130" id="KGk-i7-Jjw" customClass="CourseReviewTableViewCell" customModule="GradesApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="656" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="656" height="130"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tN9-Bg-Cpm">
+                        <rect key="frame" x="20" y="48" width="573" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHs-HZ-Cbc">
+                        <rect key="frame" x="20.000000000000004" y="77" width="41.333333333333343" height="20.333333333333329"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Reviews" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tV0-Iy-Ega">
+                        <rect key="frame" x="559" y="77" width="77" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dy-T9-xNF">
+                        <rect key="frame" x="20" y="16" width="48" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQt-jE-ViJ">
+                        <rect key="frame" x="601" y="34" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="ZHw-2E-cZX"/>
+                            <constraint firstAttribute="width" constant="35" id="aP8-qo-z2B"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain">
+                            <backgroundConfiguration key="background" image="ic_heart_empty"/>
+                        </buttonConfiguration>
+                        <connections>
+                            <action selector="onHeartClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="jXb-i8-JyQ"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="iHs-HZ-Cbc" secondAttribute="bottom" constant="16" id="9Tv-xY-iSl"/>
+                    <constraint firstItem="tN9-Bg-Cpm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="DQJ-Zd-09B"/>
+                    <constraint firstItem="iHs-HZ-Cbc" firstAttribute="top" secondItem="tN9-Bg-Cpm" secondAttribute="bottom" constant="8" symbolic="YES" id="Gx7-31-c09"/>
+                    <constraint firstItem="iHs-HZ-Cbc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Gyo-tL-5lM"/>
+                    <constraint firstAttribute="trailing" secondItem="LQt-jE-ViJ" secondAttribute="trailing" constant="20" symbolic="YES" id="I3w-R7-B44"/>
+                    <constraint firstItem="0dy-T9-xNF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="Jjy-XJ-lZS"/>
+                    <constraint firstItem="tV0-Iy-Ega" firstAttribute="top" secondItem="LQt-jE-ViJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Myk-uY-eYJ"/>
+                    <constraint firstItem="LQt-jE-ViJ" firstAttribute="leading" secondItem="tN9-Bg-Cpm" secondAttribute="trailing" constant="8" symbolic="YES" id="NNg-UC-eTF"/>
+                    <constraint firstItem="0dy-T9-xNF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="QrF-mV-gKY"/>
+                    <constraint firstItem="tN9-Bg-Cpm" firstAttribute="top" secondItem="0dy-T9-xNF" secondAttribute="bottom" constant="8" symbolic="YES" id="f1G-4y-10w"/>
+                    <constraint firstItem="tV0-Iy-Ega" firstAttribute="top" secondItem="iHs-HZ-Cbc" secondAttribute="top" id="ndM-sc-z4c"/>
+                    <constraint firstAttribute="trailing" secondItem="tV0-Iy-Ega" secondAttribute="trailing" constant="20" symbolic="YES" id="x8o-GP-MWi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="courseNameLabel" destination="tN9-Bg-Cpm" id="UrV-qh-avO"/>
+                <outlet property="courseNumberLabel" destination="0dy-T9-xNF" id="Wl7-ee-snp"/>
+                <outlet property="creditHoursLabel" destination="iHs-HZ-Cbc" id="Qtb-Pj-Imb"/>
+                <outlet property="heartButton" destination="LQt-jE-ViJ" id="ujC-5C-tmd"/>
+                <outlet property="numReviewsLabel" destination="tV0-Iy-Ega" id="bMd-bg-xDD"/>
+            </connections>
+            <point key="canvasLocation" x="366.41221374045801" y="50.70422535211268"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_heart_empty" width="128" height="128"/>
+    </resources>
+</document>
